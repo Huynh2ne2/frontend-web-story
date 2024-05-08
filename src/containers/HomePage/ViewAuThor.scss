@@ -1,0 +1,206 @@
+.tent {
+    width  : 100%;
+    height : 250px;
+    margin : 20px 176px;
+    display: flex;
+
+    gap: 15px;
+
+    .left {
+        border: 1px solid yellow;
+        float : left;
+        width : 15%;
+        height: 100%;
+
+        .infor-author {
+            width : 100%;
+            height: 80%;
+
+            .bg-author {
+                width            : 100%;
+                height           : 100%;
+                background-repeat: no-repeat;
+                background-size  : cover;
+                border-radius    : 50%;
+                margin           : 10px 0px;
+            }
+        }
+    }
+
+    .right {
+        float       : right;
+        width       : 56%;
+        height      : 100%;
+        margin-right: 100px;
+
+        .infor {
+            text-align    : center;
+            color         : black;
+            text-transform: uppercase;
+            font-weight   : 600;
+            font-family   : cursive;
+            font-size     : 20px;
+        }
+    }
+
+}
+
+
+.slick-prev {
+    border     : 2px solid #d7d7d7 !important;
+    // position: relative !important;
+    left       : -20px !important;
+    z-index    : 1000 !important;
+    background : #fff !important;
+    height     : 48px !important;
+    width      : 44px !important;
+
+    &:hover {
+        background: #eceaea !important;
+        cursor    : pointer;
+    }
+}
+
+.slick-prev:before,
+.slick-next:before {
+    font-family: FontAwesome !important;
+    color      : red !important;
+    // content: "\f060" !important;
+}
+
+.slick-next {
+    border    : 2px solid #d7d7d7 !important;
+    right     : -10px !important;
+    background: #fff !important;
+    height    : 48px !important;
+    width     : 44px !important;
+
+    &:hover {
+        background: #eceaea !important;
+        cursor    : pointer;
+    }
+}
+
+.slick-disabled {
+    display: none !important; //ghi đè thư viện
+}
+
+
+.section-share {
+    width: 100%;
+
+    &.section-specialty {
+        background: #f5f5f5;
+    }
+
+    &.section-outstanding-doctor {
+        background: #f5f5f5;
+    }
+
+    &.section-About {
+        height: 500px !important;
+    }
+
+    .section-body {
+
+
+        .section-customize {
+            padding: 5px;
+            cursor : pointer;
+
+            .bg-image {
+
+                background-position: center;
+                background-repeat  : no-repeat;
+                background-size    : cover;
+                background-color   : #eee;
+                width              : 310px;
+                height             : 150px;
+
+                &.section-specialty {
+                    // background-image: url('../../assets/images/img_specialty/chan-doan-qua-x-quang.jpg');
+
+                }
+
+                &.section-medical-facility {
+                    background-image: url('');
+                }
+
+                &.section-outstanding-doctor {
+                    background-image: url('https://www.shutterstock.com/shutterstock/photos/2426973581/display_1500/stock-vector-kudus-indonesia-february-pikachu-wearing-hoodie-jacket-in-pokemon-animation-cartoon-2426973581.jpg');
+                    width           : 200px;
+                    height          : 200px;
+                    border-radius   : 50%;
+                }
+
+                &.section-HandBook {
+                    background-image: url('');
+
+                }
+            }
+        }
+    }
+}
+
+.section-share {
+    height: 370px;
+
+
+    .section-container {
+        margin        : 0 100px;
+        display       : flex;
+        flex-direction: column;
+
+        .section-header {
+            height       : 60px;
+            margin-bottom: 30px;
+            padding-top  : 30px;
+
+            .title-section {
+                font-family: 'Times New Roman', Times, serif;
+                font-size  : 22px;
+                font-weight: 600;
+            }
+
+            .btn-section {
+                float         : right;
+                padding       : 10px 15px;
+                border        : none;
+                outline       : none;
+                display       : block;
+                background    : #ebebeb;
+                color         : black;
+                cursor        : pointer;
+                text-transform: uppercase;
+
+                &:hover {
+                    color     : white;
+                    background: #f7d800;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+.section-outstanding-doctor {
+    .outer-bg {
+        display        : flex;
+        justify-content: center;
+        margin-bottom  : 10px;
+    }
+
+    .section-customize {
+        padding: 5px;
+
+        .customize-border {
+            border : 1px solid #e4dbdb;
+            padding: 0px;
+            height : 260.6px;
+        }
+
+    }
+
+}

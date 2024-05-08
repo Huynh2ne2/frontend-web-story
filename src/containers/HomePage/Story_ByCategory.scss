@@ -1,0 +1,200 @@
+h2 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Style cho dropdown container */
+.dropdown {
+    position: relative;
+    display : inline-block;
+}
+
+/* Style cho nút dropdown */
+.dropbtn {
+    background-color: #f1f1f1;
+    color           : black;
+    padding         : 10px;
+    font-size       : 16px;
+    border          : none;
+    cursor          : pointer;
+    width           : 120px;
+}
+
+/* Dropdown content */
+.dropdown-content {
+    display         : none;
+    position        : absolute;
+    background-color: #fff;
+    box-shadow      : 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index         : 1;
+    width           : 100%;
+}
+
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.dropdown-content a {
+    color          : black;
+    padding        : 12px 16px;
+    text-decoration: none;
+    display        : block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+
+.list-story {
+    max-width: 1170px;
+    margin   : 0 auto;
+
+
+    h3 {
+        font-size     : 18px;
+        color         : #111;
+        padding       : 10px 20px;
+        text-transform: uppercase;
+        border        : 1px solid #bebebe;
+        display       : inline-block;
+        color         : #555;
+        font-weight   : 600;
+    }
+
+    ul.stories {
+        list-style      : none;
+        display         : flex;
+        flex-wrap       : wrap;
+        justify-content : space-between;
+        background-color: aliceblue;
+
+        li {
+            flex-basis   : 25%;
+            padding-left : 15px;
+            padding-right: 15px;
+            box-sizing   : border-box;
+            margin-bottom: 30px;
+            height       : 308px;
+
+            .story-top {
+                position: absolute;
+                overflow: hidden;
+                display : block;
+                height  : 150px;
+                width   : 285px;
+
+                .bg-img {
+                    // background-image : url('../../assets/images/img_homeheader/bg_2.jpg');
+                    background-repeat: no-repeat;
+                    background-size  : cover;
+                    position         : absolute;
+                    display          : block;
+                    height           : 100%;
+                    width            : 88.85%;
+                    margin           : 0px;
+                    z-index          : 1;
+
+
+                    &:hover {
+                        filter: opacity(80%);
+                    }
+                }
+            }
+
+            .story-info-general {
+                position        : absolute;
+                overflow        : hidden;
+                height          : 41%;
+                background-color: #fff;
+                width           : 17%;
+
+                .story-info {
+                    display            : block;
+                    // position        : absolute;
+                    padding            : 10px;
+                    top                : 150px;
+                    height             : 52%;
+                    width              : 100%;
+                    position           : absolute;
+                    bottom             : 10px;
+                    color              : black;
+                    font-family        : 'Times New Roman', Times, serif;
+
+
+                    .title-story {
+
+
+                        text-align    : center;
+                        text-transform: uppercase;
+                        font-size     : 20px;
+                        height        : 32px;
+                        text-overflow : ellipsis;
+                        overflow      : hidden;
+                        white-space   : nowrap;
+                    }
+
+                    span {
+                        display: block;
+
+                        i.fas.fa-heart {
+                            &.color {
+                                content: "\f004";
+                                color  : red;
+                            }
+                        }
+
+                    }
+                }
+
+                @keyframes colorChange {
+                    100% {
+                        background     : linear-gradient(to right, rgba(255, 0, 0, 1), rgba(255, 255, 0, 1), rgba(0, 128, 0, 1), rgba(0, 0, 255, 1), rgba(255, 0, 0, 1));
+                        background-size: 400%;
+                    }
+                }
+
+                .view-now {
+                    text-transform : 100%;
+                    text-decoration: none;
+                    text-align     : center;
+                    display        : block;
+
+                    /* Kích thước gradient lớn hơn kích thước nút */
+                    background-color   : #0c2edb;
+                    color              : #fff;
+                    padding            : 10px 0px;
+                    position           : absolute;
+                    height             : 37px;
+                    bottom             : -20px;
+                    width              : 100%;
+                    // transition      : 0.25s ease-in-out;
+                    transition         : background-color 0.25s ease-in-out;
+                    opacity            : 0.85;
+                    font-size          : 20px;
+                    font-family        : Georgia, 'Times New Roman', Times, serif;
+
+
+
+                    &:hover {
+
+
+                        bottom          : 0px;
+                        background-color: rgba(12, 46, 219, 0.8);
+                        // filter: opacity(80%);
+                        cursor          : pointer;
+                        transition      : 0.25s;
+                        animation       : colorChange 1.25s infinite alternate;
+
+                    }
+                }
+
+
+
+            }
+        }
+    }
+
+
+}

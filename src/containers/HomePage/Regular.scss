@@ -1,0 +1,39 @@
+.title-regular {
+    text-align     : center;
+    color          : blue;
+    font-size      : 24px;
+    text-transform : uppercase;
+    display        : flex;
+    justify-content: center;
+    font-weight    : bold;
+}
+
+.container-regular {
+    display: flex;
+    width  : 100%;
+    height : 100%;
+}
+
+.regular {
+    width          : 100%;
+    height         : 100%;
+    display        : flex;
+    align-items    : center;
+    justify-content: center;
+    text-align     : center;
+    background     : url('../../assets/images/img_homeheader/chieu_thu.jpg') no-repeat center;
+    background-size: contain;
+
+    .content {
+        height     : 350px;
+        width      : 300px;
+        margin-left: 350px;
+        font-size  : 18px;
+
+        ul li {
+            text-align : justify;
+            font-family: Brush Script MT;
+            font-size  : 24px;
+        }
+    }
+}
